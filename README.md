@@ -1,6 +1,6 @@
 # PRODIGY_WD_02
 
-## ⏱ Task Completed: Stopwatch Web Application
+# ⏱ Task Completed: Stopwatch Web Application
 
 ### I’m excited to share that I’ve successfully built a Stopwatch Application as part of my web development practice! 🚀
 
