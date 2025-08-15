@@ -16,7 +16,7 @@ In this project, I created a fully functional stopwatch that:
 
 💡 Through this project, I strengthened my JavaScript DOM manipulation skills, learned about setInterval() and clearInterval(), and improved my ability to create interactive and dynamic web applications.
 
-<a href="https://starlit-stroopwafel-c44a34.netlify.app/" target="_blank">Visit My Landing Page</a>
+<a href="https://starlit-stroopwafel-c44a34.netlify.app/" target="_blank">See Demo</a>
 
 
 #WebDevelopment #JavaScript #HTML #CSS #FrontendDevelopment #Stopwatch #LearningByDoing
