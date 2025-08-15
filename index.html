@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Basic Stopwatch with Laps</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card" role="region" aria-label="Stopwatch">
+    <div class="header">
+      <div class="title">⏱️ Basic Stopwatch</div>
+      <div class="hint">Shortcuts: <kbd>Space</kbd> Start/Stop · <kbd>L</kbd> Lap · <kbd>R</kbd> Reset</div>
+    </div>
+
+    <div class="display" aria-live="polite">
+      <div id="time" class="time" aria-label="elapsed time">00:00:00.00</div>
+    </div>
+
+    <div class="controls">
+      <button id="startStop" class="primary" aria-pressed="false">Start</button>
+      <button id="lap" class="info" disabled>Lap</button>
+      <button id="reset" class="danger" disabled>Reset</button>
+    </div>
+
+    <section class="laps" aria-label="Lap times">
+      <header>
+        <h2>Lap Times</h2>
+        <div>
+          <button id="exportCsv" class="info" disabled title="Download laps as CSV">Export CSV</button>
+          <button id="clearLaps" class="danger" disabled title="Clear all laps">Clear</button>
+        </div>
+      </header>
+      <div class="lap-list">
+        <table aria-describedby="lap table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Lap</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody id="lapsBody">
+            <tr><td colspan="3" style="color: var(--muted);">No laps yet.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <p class="footer-note">Tip: Lap records show both the time for each lap and the overall total at that moment.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
